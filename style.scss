@@ -292,6 +292,10 @@ body {
     background-size: auto 100%;
     background: url(img/dd.png) center no-repeat;
     height: 315px;
+    &__free {
+        background: url(img/ff.png) center no-repeat;
+        margin: 40px 0;
+    }
 }
 
 .sale-box {
@@ -315,10 +319,50 @@ body {
     }
 }
 
+.workstep {
+    &-title {
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+    &-article {
+        font-family: 'Gilroy';
+        font-weight: normal;
+        font-size: 16px;
+        padding-bottom: 25px;
+    }
+    &-img {
+        padding-bottom: 25px;
+        width: auto;
+        height: 90px;
+    }
+    &-circle {
+        background-color: $blue;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        color: #fff;
+        font-family: 'Gilroy';
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -24px;
+        left: 94px;
+    }
+    &-block {
+        position: relative;
+    }
+}
+
 .slider-box {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .sponsor {
@@ -338,6 +382,15 @@ body {
     }
 }
 
+.map {
+    position: relative;
+}
+
+.map-box {
+    position: absolute;
+    z-index: 1;
+}
+
 .slick-next,
 .slick-prev {
     height: 40px !important;
@@ -348,4 +401,9 @@ body {
 
 .slick-prev {
     transform: rotate(180deg);
+}
+
+.footer {
+    background-color: #2d3541;
+    color: #fff;
 }
