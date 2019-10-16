@@ -1,6 +1,14 @@
 body {
   color: #212121; }
 
+header {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000; }
+
 .header-top {
   background-color: #eef3f8; }
 
@@ -77,7 +85,8 @@ body {
 
 .main-box {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 149px; }
 
 .main-text {
   color: #fff;

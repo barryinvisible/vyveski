@@ -2,7 +2,25 @@ jQuery(function() {
     $('.slider-box').slick({
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        touchMove: true,
+        responsive: [{
+                breakpoint: 960,
+                settings: {
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    infinite: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     $('.slick-prev, .slick-next').html('<i class="fas fa-arrow-right"></i>');

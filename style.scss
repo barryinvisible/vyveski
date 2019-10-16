@@ -6,6 +6,15 @@ body {
     color: $black;
 }
 
+header {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
 .header-top {
     background-color: $grey;
 }
@@ -100,6 +109,7 @@ body {
 .main-box {
     display: flex;
     justify-content: space-between;
+    margin-top: 149px;
 }
 
 .main-text {
