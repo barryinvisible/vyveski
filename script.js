@@ -25,4 +25,8 @@ jQuery(function() {
 
     $('.slick-prev, .slick-next').html('<i class="fas fa-arrow-right"></i>');
     $('slick-prev').appendTo('.slick-list');
+    $('.icon').on('click', function() {
+        $(this).toggleClass('toggleIcon');
+        $('.header-nav').toggleClass('burger-nav');
+    });
 });
