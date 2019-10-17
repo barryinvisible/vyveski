@@ -29,4 +29,8 @@ jQuery(function() {
         $(this).toggleClass('toggleIcon');
         $('.header-nav').toggleClass('burger-nav');
     });
+    let windowWidth = $(window).width();
+    if (windowWidth <= 960) {
+        $('.header-location, .header-contact').appendTo('.header-nav');
+    }
 });
